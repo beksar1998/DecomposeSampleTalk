@@ -1,0 +1,32 @@
+[versions]
+
+kotlin = "1.9.0"
+agp = "8.1.2"
+compose = "1.5.10"
+androidx-appcompat = "1.6.1"
+androidx-activityCompose = "1.7.2"
+compose-uitooling = "1.5.1"
+
+
+decompose = "2.2.0-compose-experimental-alpha04"
+essenty = "1.2.0"
+
+[libraries]
+
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidx-appcompat" }
+androidx-activityCompose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+compose-uitooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose-uitooling" }
+
+
+decompose-decompose = { group = "com.arkivanov.decompose", name = "decompose", version.ref = "decompose" }
+decompose-extensionsComposeJetbrains = { group = "com.arkivanov.decompose", name = "extensions-compose-jetbrains", version.ref = "decompose" }
+
+essenty-lifecycle = { group = "com.arkivanov.essenty", name = "lifecycle", version.ref = "essenty" }
+
+
+
+[plugins]
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+compose = { id = "org.jetbrains.compose", version.ref = "compose" }
+android-application = { id = "com.android.application", version.ref = "agp" }
